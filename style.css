@@ -23,6 +23,8 @@ box-shadow:
  body {
   background: linear-gradient(135deg, #ffffff, #fff9e6, #e6ffe6);
     padding-top: var(--bs-navbar-height, 70px);
+     overflow-x: hidden;
+
 }
 
 .btn-golden:hover {
