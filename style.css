@@ -1,0 +1,545 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn-golden {
+  background-color: #FFD700; /* Golden background */
+  color: #01411C; /* Green text */
+  padding: 10px 30px;
+  border: none;
+   transition: all 0.3s ease; /* Smooth animation */
+box-shadow: 
+ 
+  rgba(255, 215, 0, 0.25) 0px 54px 55px, 
+  rgba(255, 215, 0, 0.12) 0px -12px 30px, 
+  rgba(255, 215, 0, 0.12) 0px 4px 6px, 
+  rgba(255, 215, 0, 0.17) 0px 12px 13px, 
+  rgba(255, 215, 0, 0.09) 0px -3px 5px;
+
+ 
+  
+}
+ body {
+  background: linear-gradient(135deg, #ffffff, #fff9e6, #e6ffe6);
+    padding-top: var(--bs-navbar-height, 70px);
+}
+
+.btn-golden:hover {
+  background-color: #e6c200; /* Slightly darker gold */
+  color: white; /* Text white on hover */
+    transform: scale(1.1);
+}
+  
+
+
+.navbar .nav-link {
+  color: white !important; /* Default color */
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #FFD700 !important; /* Golden on hover */
+}
+
+
+.mainheading{
+    color: #01411C;
+    font-family: "font-family: 'Merriweather', serif"
+
+}
+.golden-shadow {
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.7);
+  border-radius: 8px; /* Optional: thoda rounded edges ke liye */
+  transition: box-shadow 0.3s ease;
+}
+
+.golden-shadow:hover {
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.9);
+}
+@media (max-width: 580px) {
+  .flex-container {
+    flex-direction: column-reverse !important;
+    align-items: center;
+    gap: 20px;
+  }
+
+  
+
+  .flex-container img {
+    width: 80% !important;
+    height: auto !important;
+  }
+}
+
+.btn-success{
+   color: white !important;
+   width: 10rem !important;
+   
+}
+
+.btn-success:hover {
+ 
+ color: #FFD700  !important; /* Text white on hover */
+    transform: scale(1.1);
+     box-shadow: 0 4px 15px rgba(255, 215, 0, 0.7);
+    
+
+
+}
+
+.section-bg{
+  background-color:#01411C !important;
+  margin-top: 50px !important;
+}
+
+.heading1st{
+  color: white !important;
+  font-size: 3.5rem !important;
+}
+.heading2{
+    font-size: 3.5rem !important;
+    color: #FFD700;
+
+}
+
+.heros{
+  background-color: #01411C !important;
+  margin-top: 150px !important;
+}
+ 
+/* Section styling */
+.history-section {
+  padding: 50px 20px;
+   
+  text-align: center;
+}
+
+.history-title {
+  font-size: 2rem;
+  font-weight: bold;
+  
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+/* Cards container */
+.history-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Single card */
+.history-card {
+  background-color: white;
+  border: 2px solid gold;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(218, 165, 32, 0.5);
+}
+
+/* Card heading */
+.history-card h3 {
+  font-size: 1.2rem;
+ 
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.history-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Icons */
+.history-card i {
+  font-size: 2rem;
+  color: gold;
+  margin-bottom: 10px;
+}
+.history-section {
+  padding-top: 100px;
+}
+@media (max-width: 670px) {
+  .history-cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .card-group {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+.card {
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  background-color: #006400; /* Dark green */
+  color: white;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.7); /* Golden shadow */
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+  color: white;
+}
+
+.card:hover .card-footer {
+  background-color: gold;
+  color: black;
+}
+*/quiz*/
+/* ===== QUIZ SECTION FULL RESPONSIVE ===== */
+.quiz-section {
+  background: linear-gradient(135deg, #006400, #ffffff);
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  padding: 20px;
+}
+
+.quiz-container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Heading */
+.quiz-title {
+  text-align: center;
+  color: #006400;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+  border-bottom: 3px solid goldenrod;
+  padding-bottom: 10px;
+}
+
+#question-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Options */
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-btn {
+  padding: 12px;
+  background: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+  background: #FFD700;
+  color: white;
+  border-color: #006400;
+}
+
+/* Correct / Wrong answers */
+.correct {
+  background-color: #28a745 !important;
+  color: white;
+}
+
+.wrong {
+  background-color: #dc3545 !important;
+  color: white;
+}
+
+/* Buttons */
+.btn-next, .btn-restart {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 25px;
+  background: #006400;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-next:hover, .btn-restart:hover {
+  background: #FFD700;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .quiz-title {
+    font-size: 1.8rem;
+  }
+
+  #question-text {
+    font-size: 1rem;
+  }
+
+  .option-btn {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-title {
+    font-size: 1.5rem;
+  }
+
+  .option-btn {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .btn-next, .btn-restart {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+.quiz-section {
+background-color:#01411C;
+  min-height: 100vh; /* Full screen height */
+  
+  /* ✅ Centering fix */
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  
+  padding: 0; /* Remove extra padding if not needed */
+  margin: 0;  /* Remove extra margin */
+}
+
+.history-gallery {
+  text-align: center;
+  padding: 50px 20px;
+  
+}
+
+.history-gallery h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #006600;
+  background: linear-gradient(90deg, #ffd700, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  background: #fff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Fixed Height Images */
+.gallery-item img {
+  width: 100%;
+  height: 200px; /* All images same height */
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Hover Animation with Golden Effect */
+.gallery-item:hover img {
+  transform: scale(1.1) rotate(2deg);
+  filter: brightness(1.1) saturate(1.2);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6); /* Golden Shadow */
+}
+.pak-footer {
+  
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 3px solid #ffd700;
+}
+
+.site-name {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #ffd700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.9);
+  font-family:'Courier New', Courier, monospace
+}
+
+.footer-content p {
+  margin: 5px 0;
+  color: #006600;
+  font-size: 1rem;
+}
+
+.footer-content .creator span {
+  color: #ffd700; /* Golden text */
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+  .site-name {
+    font-size: 1.5rem;
+  }
+}
+
+
+/*form*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+/* Open Form Button */
+.open-btn {
+  background: green;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px;
+}
+.open-btn:hover {
+  background: goldenrod;
+}
+
+/* Form Section Popup */
+.form-section {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Form Container */
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: goldenrod;
+}
+.close-btn:hover {
+  color: red;
+}
+
+/* Form Styling */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: green;
+}
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: goldenrod;
+}
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid goldenrod;
+  border-radius: 8px;
+  outline: none;
+}
+.form-container input:focus {
+  border-color: green;
+  box-shadow: 0 0 8px rgba(0,128,0,0.5);
+}
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.submit-btn:hover {
+  background: goldenrod;
+  color: white;
+}
+.form-footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.form-footer a {
+  color: goldenrod;
+  text-decoration: none;
+}
+.form-footer a:hover {
+  text-decoration: underline;
+}
